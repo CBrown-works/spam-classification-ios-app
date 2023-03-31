@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB9E249E29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */; };
+		AB9E24A029D4D7A600C0CD19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E249F29D4D7A600C0CD19 /* ContentView.swift */; };
+		AB9E24A229D4D7AA00C0CD19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24A129D4D7AA00C0CD19 /* Assets.xcassets */; };
+		AB9E24A529D4D7AA00C0CD19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24A429D4D7AA00C0CD19 /* Preview Assets.xcassets */; };
+		AB9E24AC29D4D80C00C0CD19 /* Ai_Reponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E24AB29D4D80B00C0CD19 /* Ai_Reponse.swift */; };
+		AB9E24AE29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB9E24AD29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel */; };
+		AB9E24BB29D4DA7D00C0CD19 /* AiLogo512.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24B729D4DA7C00C0CD19 /* AiLogo512.png */; };
+		AB9E24BC29D4DA7D00C0CD19 /* AiLogo256.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24B829D4DA7C00C0CD19 /* AiLogo256.png */; };
+		AB9E24BD29D4DA7D00C0CD19 /* AiLogo100.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24B929D4DA7D00C0CD19 /* AiLogo100.png */; };
+		AB9E24BE29D4DA7D00C0CD19 /* uciML.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24BA29D4DA7D00C0CD19 /* uciML.png */; };
+		AB9E24C229D4E3A800C0CD19 /* dataExample.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24C129D4E3A800C0CD19 /* dataExample.png */; };
+		AB9E24C429D4E5C600C0CD19 /* ChatBubbleDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E24C329D4E5C600C0CD19 /* ChatBubbleDesign.swift */; };
+		AB9E24C729D530EE00C0CD19 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24C629D530EE00C0CD19 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB9E249A29D4D7A600C0CD19 /* SpamSmsClassifierApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamSmsClassifierApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamSmsClassifierApplicationApp.swift; sourceTree = "<group>"; };
+		AB9E249F29D4D7A600C0CD19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB9E24A129D4D7AA00C0CD19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB9E24A429D4D7AA00C0CD19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB9E24AB29D4D80B00C0CD19 /* Ai_Reponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ai_Reponse.swift; sourceTree = "<group>"; };
+		AB9E24AD29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpamSmsClassifier.mlmodel; sourceTree = "<group>"; };
+		AB9E24B729D4DA7C00C0CD19 /* AiLogo512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AiLogo512.png; sourceTree = "<group>"; };
+		AB9E24B829D4DA7C00C0CD19 /* AiLogo256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AiLogo256.png; sourceTree = "<group>"; };
+		AB9E24B929D4DA7D00C0CD19 /* AiLogo100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AiLogo100.png; sourceTree = "<group>"; };
+		AB9E24BA29D4DA7D00C0CD19 /* uciML.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uciML.png; sourceTree = "<group>"; };
+		AB9E24C129D4E3A800C0CD19 /* dataExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dataExample.png; sourceTree = "<group>"; };
+		AB9E24C329D4E5C600C0CD19 /* ChatBubbleDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleDesign.swift; sourceTree = "<group>"; };
+		AB9E24C529D52C6500C0CD19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AB9E24C629D530EE00C0CD19 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB9E249729D4D7A600C0CD19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB9E249129D4D7A600C0CD19 = {
+			isa = PBXGroup;
+			children = (
+				AB9E249C29D4D7A600C0CD19 /* SpamSmsClassifierApplication */,
+				AB9E249B29D4D7A600C0CD19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9E249B29D4D7A600C0CD19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E249A29D4D7A600C0CD19 /* SpamSmsClassifierApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9E249C29D4D7A600C0CD19 /* SpamSmsClassifierApplication */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E24C529D52C6500C0CD19 /* Info.plist */,
+				AB9E24AD29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel */,
+				AB9E24AB29D4D80B00C0CD19 /* Ai_Reponse.swift */,
+				AB9E24C329D4E5C600C0CD19 /* ChatBubbleDesign.swift */,
+				AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */,
+				AB9E249F29D4D7A600C0CD19 /* ContentView.swift */,
+				AB9E24A129D4D7AA00C0CD19 /* Assets.xcassets */,
+				AB9E24C129D4E3A800C0CD19 /* dataExample.png */,
+				AB9E24B929D4DA7D00C0CD19 /* AiLogo100.png */,
+				AB9E24B829D4DA7C00C0CD19 /* AiLogo256.png */,
+				AB9E24B729D4DA7C00C0CD19 /* AiLogo512.png */,
+				AB9E24C629D530EE00C0CD19 /* Launch Screen.storyboard */,
+				AB9E24BA29D4DA7D00C0CD19 /* uciML.png */,
+				AB9E24A329D4D7AA00C0CD19 /* Preview Content */,
+			);
+			path = SpamSmsClassifierApplication;
+			sourceTree = "<group>";
+		};
+		AB9E24A329D4D7AA00C0CD19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E24A429D4D7AA00C0CD19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB9E249929D4D7A600C0CD19 /* SpamSmsClassifierApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9E24A829D4D7AA00C0CD19 /* Build configuration list for PBXNativeTarget "SpamSmsClassifierApplication" */;
+			buildPhases = (
+				AB9E249629D4D7A600C0CD19 /* Sources */,
+				AB9E249729D4D7A600C0CD19 /* Frameworks */,
+				AB9E249829D4D7A600C0CD19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpamSmsClassifierApplication;
+			productName = SpamSmsClassifierApplication;
+			productReference = AB9E249A29D4D7A600C0CD19 /* SpamSmsClassifierApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB9E249229D4D7A600C0CD19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AB9E249929D4D7A600C0CD19 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AB9E249529D4D7A600C0CD19 /* Build configuration list for PBXProject "SpamSmsClassifierApplication" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB9E249129D4D7A600C0CD19;
+			productRefGroup = AB9E249B29D4D7A600C0CD19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9E249929D4D7A600C0CD19 /* SpamSmsClassifierApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9E249829D4D7A600C0CD19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9E24C229D4E3A800C0CD19 /* dataExample.png in Resources */,
+				AB9E24BE29D4DA7D00C0CD19 /* uciML.png in Resources */,
+				AB9E24C729D530EE00C0CD19 /* Launch Screen.storyboard in Resources */,
+				AB9E24BC29D4DA7D00C0CD19 /* AiLogo256.png in Resources */,
+				AB9E24BB29D4DA7D00C0CD19 /* AiLogo512.png in Resources */,
+				AB9E24A529D4D7AA00C0CD19 /* Preview Assets.xcassets in Resources */,
+				AB9E24A229D4D7AA00C0CD19 /* Assets.xcassets in Resources */,
+				AB9E24BD29D4DA7D00C0CD19 /* AiLogo100.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB9E249629D4D7A600C0CD19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9E24A029D4D7A600C0CD19 /* ContentView.swift in Sources */,
+				AB9E249E29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift in Sources */,
+				AB9E24AE29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel in Sources */,
+				AB9E24C429D4E5C600C0CD19 /* ChatBubbleDesign.swift in Sources */,
+				AB9E24AC29D4D80C00C0CD19 /* Ai_Reponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB9E24A629D4D7AA00C0CD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB9E24A729D4D7AA00C0CD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB9E24A929D4D7AA00C0CD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpamSmsClassifierApplication/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpamSmsClassifierApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carltonbrowndev.SpamSmsClassifierApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB9E24AA29D4D7AA00C0CD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpamSmsClassifierApplication/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpamSmsClassifierApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carltonbrowndev.SpamSmsClassifierApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB9E249529D4D7A600C0CD19 /* Build configuration list for PBXProject "SpamSmsClassifierApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9E24A629D4D7AA00C0CD19 /* Debug */,
+				AB9E24A729D4D7AA00C0CD19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9E24A829D4D7AA00C0CD19 /* Build configuration list for PBXNativeTarget "SpamSmsClassifierApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9E24A929D4D7AA00C0CD19 /* Debug */,
+				AB9E24AA29D4D7AA00C0CD19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB9E249229D4D7A600C0CD19 /* Project object */;
+}
