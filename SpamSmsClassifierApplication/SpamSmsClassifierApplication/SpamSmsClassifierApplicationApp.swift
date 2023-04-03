@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct SpamSmsClassifierApplicationApp: App {
-    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().preferredColorScheme(isDarkMode ? .dark : .light)
+            SplashScreenView() // used to display animated splash screen immediately after launch screen
+
         }
     }
 }
