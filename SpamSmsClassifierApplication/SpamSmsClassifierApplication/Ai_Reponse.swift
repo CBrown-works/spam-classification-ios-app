@@ -16,7 +16,15 @@ func getAIReponse(message: String) -> SpamSmsClassifierOutput?{ // method for ta
         let model = try SpamSmsClassifier(configuration: config) // creates an instance of the AI model
 
         let prediction = try model.prediction(input:SpamSmsClassifierInput.init(text: tempMessage))
+        
+        let classVal = prediction.label // creates a variable that sends the text message to the AI and stores the prediction response from AI that will either be ham or spam
+        if classVal == "spam"{
+            postSpam( text_message: message)// if the message is spam post the spam text to rest api to simulate logging spam messages
+        }
+        
         return prediction
+        
+        
 
     } catch{
 

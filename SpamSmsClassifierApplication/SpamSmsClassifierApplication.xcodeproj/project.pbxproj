@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB84CE5829DCAE330019560F /* RestApiSpamLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84CE5729DCAE330019560F /* RestApiSpamLogger.swift */; };
 		AB9E249E29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */; };
 		AB9E24A029D4D7A600C0CD19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E249F29D4D7A600C0CD19 /* ContentView.swift */; };
 		AB9E24A229D4D7AA00C0CD19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9E24A129D4D7AA00C0CD19 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB84CE5729DCAE330019560F /* RestApiSpamLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiSpamLogger.swift; sourceTree = "<group>"; };
 		AB9E249A29D4D7A600C0CD19 /* SpamSmsClassifierApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamSmsClassifierApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamSmsClassifierApplicationApp.swift; sourceTree = "<group>"; };
 		AB9E249F29D4D7A600C0CD19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				AB9E24AB29D4D80B00C0CD19 /* Ai_Reponse.swift */,
 				AB9E249D29D4D7A600C0CD19 /* SpamSmsClassifierApplicationApp.swift */,
 				AB9E249F29D4D7A600C0CD19 /* ContentView.swift */,
+				AB84CE5729DCAE330019560F /* RestApiSpamLogger.swift */,
 				AB9E24CD29D9DC7500C0CD19 /* SplashScreenView.swift */,
 				AB9E24CC29D7D4B600C0CD19 /* Images */,
 				AB9E24A129D4D7AA00C0CD19 /* Assets.xcassets */,
@@ -193,6 +196,7 @@
 				AB9E24CE29D9DC7500C0CD19 /* SplashScreenView.swift in Sources */,
 				AB9E24AE29D4D85300C0CD19 /* SpamSmsClassifier.mlmodel in Sources */,
 				AB9E24AC29D4D80C00C0CD19 /* Ai_Reponse.swift in Sources */,
+				AB84CE5829DCAE330019560F /* RestApiSpamLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
