@@ -8,7 +8,7 @@ import Foundation
 struct TextClassification: Codable { // creates a model that we are able to decode from json data
     var userId: Int
     var id: Int?
-    var title: String
+    var title: String // spam
     var text_message: String
 }
 
@@ -45,6 +45,7 @@ func postSpam(text_message:String){
             do{
                 // if request was succesful the data is then decoded into a swift structure so that it is accessible and we can verify the data was logged via print
                 let TextItemModel = try JSONDecoder().decode(TextClassification.self, from: data)
+                print(data)
                 print("Response data:\n \(TextItemModel)")
                 print("TextItemModel id: \(TextItemModel.id ?? 0)")
                 print("TextItemModel uderId: \(TextItemModel.userId)")
@@ -61,4 +62,4 @@ func postSpam(text_message:String){
     task.resume()
 
 }
-//postMethod(class: "Spam", text_message: "hello how are you today")
+

@@ -10,10 +10,10 @@ struct ContentView: View {
     
     @State private var messageText = "" // temporarily stores text from users or AI before being added to messages array
     
-    @State var messages: [String] = ["Hello I'm an SMS Text Classifier","I have analyzed thousands of text messages in order to learn how to differentiate between spam text messages and casual conversation","Send me a text message and I'll use my artifical intelligence to determine if the text is spam"]// stores messages between users and AI before pushinng them to user interface
+    @State var messages: [String] = ["Hello I'm an SMS Text Classifier","I have analyzed thousands of text messages in order to learn how to differentiate between spam text messages and casual conversation","Send me a text message and I'll use my artificial intelligence to determine if the text is spam"]// stores messages between users and AI before pushinng them to user interface
     
     @State var about_messages: [String] = ["The collection is composed by just one file, where each line has the correct class (ham or spam) followed by the raw message.","Usage","You can find more useful information about the SMS Spam Collection v.1 at https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection","Finally, we have incorporated the SMS Spam Corpus v.0.1 Big. It has 1,002 SMS ham messages and 322 spam messages and it is public available at: http://www.esp.uem.es/jmgomez/smsspamcorpus/.","A list of 450 SMS ham messages collected from Caroline Tag's PhD Thesis available at http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf.","A subset of 3,375 SMS randomly chosen ham messages of the NUS SMS Corpus (NSC), which is a dataset of about 10,000 legitimate messages collected for research at the Department of Computer Science at the National University of Singapore. The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly available. The NUS SMS Corpus is avalaible at: http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/.","A collection of 425 SMS spam messages was manually extracted from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: http://www.grumbletext.co.uk/.","This corpus has been collected from free or free for research sources at the Internet:","Composition","The SMS Spam Collection v.1 is a public set of SMS labeled messages that have been collected for mobile phone spam research. It has one collection composed by 5,574 English, real and non-enconded messages, tagged according being legitimate (ham) or spam.","The SMS Spam Collection was created by Tiago A. Almeida and José María Gómez Hidalgo."] // used just to store messages telling the user what the data is about before pushing the messages to ui
-    @State var HamOrSpam: Bool = false // stores ham or spam boolean value that changes depending on if the AI determines if the text message is spam or a legitimate text message
+    
     var pages: [Page] = [.init(name: "Spam SMS Classification",
                                        imageName:"text.bubble.fill",color:.pink),
                                  .init(name: "About The Data", imageName:"doc.plaintext",color:.green),
@@ -34,7 +34,7 @@ struct ContentView: View {
                 .navigationTitle("Home")
                 .navigationDestination(for:Page.self ) { page in
                     if page.name == "Spam SMS Classification"{// when a user clicks a label from the section the if statements determine which page to display based on label name clicked
-                        VStack{
+                        VStack{ 
                             HStack{
                                 Text("SMS Classifier").font(.largeTitle).bold()
                                 Image("AiLogo100")
@@ -68,7 +68,7 @@ struct ContentView: View {
                             }.rotationEffect(.degrees(180)) // the double rotation effects flips messages to make messages display from bottom to top
                                 .background(Color.gray.opacity(0.10))
                             HStack{
-                                TextField("Type something", text: $messageText).padding().background(Color.gray.opacity(0.1)).cornerRadius(10)
+                                TextField("Type something....", text: $messageText).padding().background(Color.gray.opacity(0.1)).cornerRadius(10)
                                     .onSubmit { // stores user text to binding variable then uses send message method to push to array and display in UI after user presses enter
                                     sendMessage(message: messageText)
                                 }
@@ -141,13 +141,13 @@ struct ContentView: View {
                             Spacer()
                         }
                     }
-                    else{
-                        ZStack{
-                            page.color.ignoresSafeArea()
-                            Label(page.name, systemImage: page.imageName)
-                                .font(.largeTitle).bold()
-                        }
-                    }
+//                    else{
+//                        ZStack{
+//                            page.color.ignoresSafeArea()
+//                            Label(page.name, systemImage: page.imageName)
+//                                .font(.largeTitle).bold()
+//                        }
+//                    }
                 }
             }
         } else {
@@ -163,9 +163,9 @@ struct ContentView: View {
             withAnimation(){
                 let classVal = getAIReponse(message: message)!.label // creates a variable that sends the text message to the AI and stores the prediction response from AI that will either be ham or spam
                 if classVal == "ham"{
-                    messages.append("That text message is most likely not spam")
+                    messages.append("That text message is most likely not spam ✅ 👍")
                 }else{
-                    messages.append("That text message is most likely spam")
+                    messages.append("That text message is most likely spam 🗑️👎")
                 }
             }
         }
